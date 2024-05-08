@@ -26,7 +26,7 @@ html {
 }
 
 body {
-  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+  font-family:'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'MS Pゴシック',sans-serif;
 }
 
 * {
@@ -39,11 +39,40 @@ body {
 
 /* 上の部分は気にせずここから書く */
 /* styles.css */
-.image-container {
-  width: 1000px;
-  height: 300px;
-  margin-top: 220px; /* 上部に余白を追加 */
-  background-image: url('/Users/matsumurashougo/geekationWorkspace/html_css_basic/lesson3/coffee.jpg'); /* 画像へのパスを指定 */
-  background-size: cover; /* 背景画像を要素に合わせて拡大縮小 */
-  background-position: center top; /* 背景画像を中央に配置 */
+body {
+  margin: 20;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 10px; /* 上部の余白を追加 */
+  margin-bottom: 20px; /* 下部の余白を追加 */
+}
+
+.black-section, .white-section {
+  width: 20%;
+  height: 50%;
+  box-sizing: border-box;
+  border: 1px solid black;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.container h2 {
+  font-weight: normal;
+}
+
+.black-section {
+  background-color: black;
+  color: white;
+}
+
+.white-section {
+  background-color: white;
+  color: black;
 }
