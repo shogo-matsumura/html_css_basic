@@ -1,0 +1,208 @@
+@charset "UTF-8";
+
+/* reset */
+body, h1, h2, h3, h4, h5, h6, p, address,
+ul, ol, li, dl, dt, dd, img, form, table, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 100%;
+  text-align: left;
+  list-style-type: none;
+  border-collapse: collapse;
+}
+
+textarea {
+  font-size: 100%;
+  vertical-align: middle;
+}
+
+img {
+  border-style: none;
+  display: block;
+}
+
+hr {
+  display: none;
+}
+
+em {
+  font-style: normal
+}
+
+input {
+  line-height: auto;
+  vertical-align: middle;
+}
+
+strong.more {
+  color: #c30
+}
+
+a {
+  text-decoration: none;
+}
+
+html {}
+
+body {
+  font-family: 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'メイリオ', Meiryo, 'ＭＳ Ｐゴシック', sans-serif;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* 上の部分は気にせずここから書く */
+<style>body {
+  font-family: "メイリオ", meiryo, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  /* 水平方向の中央配置 */
+  align-items: center;
+  /* 垂直方向の中央配置 */
+  height: 70vh;
+  /* 画面全体の高さを使用 */
+}
+
+.container {
+  border: 1px solid #000000;
+  width: 1000px;
+  height: 600px;
+  position: relative;
+  margin: 5px auto 0; /* 上部に20p追加し、中央配置 */
+  display: flex;
+  justify-content: center; /* 水平方向の中央配置 */
+  align-items: center; /* 垂直方向の中央配置 */
+}
+
+
+
+.color-box {
+  width: 1200px; /* 各色ボックスの幅 */
+  height: 100%;
+  display: flex; /* 子要素を横並びに配置するために flexbox を使用 */
+  justify-content: center; /* 子要素を水平方向に中央配置 */
+  align-items: center; /* 子要素を垂直方向に中央配置 */
+}
+
+
+.small-square {
+  width: 60px;
+  /* 小さい四角形の幅 */
+  height: 60px;
+  /* 小さい四角形の高さ */
+  background-color: white;
+  /* 背景色を白に設定 */
+  border: 1px solid black;
+  /* 枠線を追加 */
+  position: absolute;
+  /* 親要素に対して絶対配置 */
+}
+
+
+.red-box {
+  background-color: red;
+
+}
+
+.blue-box {
+  background-color: blue;
+}
+
+.green-box {
+  background-color: green;
+}
+
+/* 各色ボックス内の小さい四角形の位置調整 */
+.red-box .small-square {
+  top: 50px;
+  left: 50px;
+}
+
+.blue-box .small-square {
+  top: 150px;
+  left: 150px;
+}
+
+.green-box .small-square {
+  top: 250px;
+  left: 220px;
+}
+
+/* 各色ボックス内の小さい四角形の追加 */
+.color-box .small-square:nth-child(1) {
+  top: 10px;
+  left: 460px;
+}
+
+.color-box .small-square:nth-child(2) {
+  top: 10px;
+  left: 530px;
+}
+
+.color-box .small-square:nth-child(3) {
+  top: 10px;
+  left: 600px;
+}
+
+.color-box .small-square:nth-child(4) {
+  top: 390px;
+  left: 670px;
+}
+
+.color-box .small-square:nth-child(5) {
+  top: 460px;
+  left: 670px;
+}
+
+.color-box .small-square:nth-child(6) {
+  top: 530px;
+  left: 670px;
+}
+
+.color-box .small-square:nth-child(7) {
+  top: 280px;
+  left: 60px;
+}
+
+.color-box .small-square:nth-child(8) {
+  top: 280px;
+  left: 130px;
+}
+
+.color-box .small-square:nth-child(9) {
+  top: 280px;
+  left: 200px;
+}
+
+</style>.background-red {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #c50000;
+}
+
+.background-blue {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 150px;
+  background: #0116ff;
+}
+
+.background-green {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 150px;
+  background: #009e35;
+}
